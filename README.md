@@ -2,7 +2,7 @@
 
 Version 2
 
-Modelos de Programacion 1
+Modelos de Programacion 1 - Grupo 82
 Daniel Alfonso Vargas Ortiz - 20152020009
 Brayan Steven Aldana Gomez - 20152020042
 
