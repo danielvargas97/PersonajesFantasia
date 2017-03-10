@@ -12,7 +12,7 @@
     String cuerpo =  (String) session.getAttribute("Cuerpo");
     String escudo = (String)session.getAttribute("Escudo");
     String montura = (String)session.getAttribute("Montura");
-    String fabrica = (String)session.getAttribute("Fabrica");
+    
 %>
 <html>
     <head>
@@ -20,9 +20,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>¡¡¡Creado con la fabrica de <%=fabrica%>s!!! </h1>
+        <h1>¡¡¡Construcción Hecha!!! </h1>
         
-        <canvas id="myCanvas" width="1300" height="780" style="border:1px solid #d3d3d3;">
+        <canvas id="myCanvas" width="1300" height="600" style="border:1px solid #d3d3d3;">
         Your browser does not support the HTML5 canvas tag.
         </canvas>
         
@@ -40,13 +40,14 @@
             window.onload = function() {
                 var canvas = document.getElementById("myCanvas");
                 var ctx = canvas.getContext("2d");
-                var alto = 150;
-                var ancho = 250;
+                var alto = 350;
+                var ancho = 500;
                 //var img = document.getElementById("arma");
-               ctx.drawImage(imgArma, 30, 30,ancho,alto);
-               ctx.drawImage(imgCuerpo, 300, 30,ancho,alto);
-               ctx.drawImage(imgEscudo,30,200,ancho,alto);
-               ctx.drawImage(imgMontura,300,200,ancho,alto);
+           
+                ctx.drawImage(imgCuerpo, 30, 30,alto,ancho);
+                ctx.drawImage(imgMontura,30,30,alto,ancho);
+                ctx.drawImage(imgArma, 30, 30,alto,ancho);
+                ctx.drawImage(imgEscudo,30,30,alto,ancho);
             };
         </script>
         
