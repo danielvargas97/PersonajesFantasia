@@ -10,3 +10,4 @@ Aplicacion de patrones para generar personajes
 
 Cambios:
 v2: Se agrega el builder para construir los personajes como la reunion de sus partes(Arma, Escudo, Montura, Cuerpo)
+La logica, la presentacion y demas están en la carpeta Fábrica
