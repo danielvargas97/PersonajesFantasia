@@ -13,7 +13,7 @@ public class EscudoPlateado extends EscudoAbstracto {
 
     @Override
     public String imagen() {
-        return "imagenes/escudoElfo.jpg";
+        return "imagenes/escudoElfo.png";
     }
 
 }

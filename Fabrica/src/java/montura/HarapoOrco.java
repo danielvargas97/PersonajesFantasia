@@ -12,7 +12,7 @@ public class HarapoOrco extends Montura {
 
     @Override
     public String imagen() {
-        return "imagenes/harapoOrco.jpg";
+        return "imagenes/harapoOrco.png";
     }
     
 }

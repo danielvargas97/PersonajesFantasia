@@ -8,7 +8,7 @@ public class CuerpoOrco extends Cuerpo {
 
     @Override
     public String imagen() {
-        return "imagenes/cuerpoOrco.gif";
+        return "imagenes/cuerpoOrco.png";
     }
     
 }

@@ -11,6 +11,6 @@ public class CuerpoElfo extends Cuerpo {
 
     @Override
     public String imagen() {
-        return "imagenes/cuerpoElfo.jpg";
+        return "imagenes/cuerpoElfo.png";
     }
 }

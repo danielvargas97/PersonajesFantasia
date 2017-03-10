@@ -9,6 +9,6 @@ public class AmuletoMago extends EscudoAbstracto {
 
     @Override
     public String imagen() {
-        return "imagenes/escudoMago.jpg";
+        return "imagenes/escudoMago.png";
     }
 }

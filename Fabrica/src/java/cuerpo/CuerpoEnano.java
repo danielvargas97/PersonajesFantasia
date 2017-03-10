@@ -8,7 +8,7 @@ public class CuerpoEnano extends Cuerpo {
 
     @Override
     public String imagen() {
-        return "imagenes/cuerpoEnano.jpg";
+        return "imagenes/cuerpoEnano.png";
     }
     
 }

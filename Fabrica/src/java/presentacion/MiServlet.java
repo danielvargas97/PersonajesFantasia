@@ -5,6 +5,8 @@
  */
 package presentacion;
 
+import constructores.Constructor;
+import constructores.Director;
 import fabricas.FabricaAbstracta;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,6 +15,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import logica.Cliente;
+import personaje.Personaje;
 
 /**
  *
@@ -38,18 +41,30 @@ public class MiServlet extends HttpServlet {
         Cliente cliente = new Cliente();
         bntSeleccionado = request.getParameter("boton");// se obtiene info del boton seleccionado en html
         
-        cliente.personaje(bntSeleccionado);//se envia informacion al cliente del personaje selecionado
+        Personaje p;
+
+        cliente.seleccionarConstructor(bntSeleccionado);
+        //cliente.personaje(bntSeleccionado);//se envia informacion al cliente del personaje selecionado
+        p= cliente.crear(cliente.getConstructor());
         
-        arma = cliente.arma();// se recibe un string con el arma del personaje seleccionado
-        cuerpo = cliente.cuerpo();// se recibe un string con el cuerpo del personaje seleccionado
-        escudo = cliente.escudo();// se recibe un string con el escudo del personaje seleccionado
-        montura = cliente.montura();// se recibe un string con la montura del personaje seleccionado
         
-        request.getSession().setAttribute("Arma", arma);
+        arma = p.getMiArma().imagen();// se recibe un string con el arma del personaje seleccionado
+        cuerpo = p.getMiCuerpo().imagen();// se recibe un string con el cuerpo del personaje seleccionado
+        escudo = p.getMiEscudo().imagen();// se recibe un string con el escudo del personaje seleccionado
+        montura = p.getMiMontura().imagen();// se recibe un string con la montura del personaje seleccionado
+        
+        System.out.println(arma);
+        System.out.println(cuerpo);
+        System.out.println(escudo);
+        System.out.println(montura);
+        
+        
         request.getSession().setAttribute("Cuerpo", cuerpo);
-        request.getSession().setAttribute("Escudo", escudo);
         request.getSession().setAttribute("Montura", montura);
-        request.getSession().setAttribute("Fabrica", bntSeleccionado);
+        request.getSession().setAttribute("Arma", arma);
+        request.getSession().setAttribute("Escudo", escudo);
+        
+        //request.getSession().setAttribute("Fabrica", bntSeleccionado);
         response.sendRedirect("personaje.jsp");
 
     }

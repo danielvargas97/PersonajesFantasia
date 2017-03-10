@@ -11,7 +11,7 @@ public class EscudoRomano extends EscudoAbstracto{
 
     @Override
     public String imagen() {
-        return "imagenes/escudoHumano.jpg";
+        return "imagenes/escudoRomano.png";
     }
 
 }

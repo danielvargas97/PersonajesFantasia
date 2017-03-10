@@ -9,7 +9,7 @@ public class Capa extends Montura {
 
     @Override
     public String imagen() {
-        return "imagenes/capa.jpg";
+        return "imagenes/capa.png";
     }
     
     

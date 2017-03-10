@@ -9,6 +9,6 @@ public class Baston extends ArmaAbstracta {
 
     @Override
     public String imagen() {
-        return "imagenes/baston.jpg";
+        return "imagenes/baston.png";
     }
 }

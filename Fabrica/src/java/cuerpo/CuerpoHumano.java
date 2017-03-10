@@ -12,6 +12,6 @@ public class CuerpoHumano extends Cuerpo {
 
     @Override
     public String imagen() {
-        return "imagenes/cuerpoHumano.gif";
+        return "imagenes/cuerpoHumano.png";
     }
 }

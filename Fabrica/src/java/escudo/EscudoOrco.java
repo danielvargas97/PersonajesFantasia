@@ -9,6 +9,6 @@ public class EscudoOrco extends EscudoAbstracto {
 
     @Override
     public String imagen() {
-        return "imagenes/EscudoOrco.png";
+        return "imagenes/escudoOrco.png";
     }
 }

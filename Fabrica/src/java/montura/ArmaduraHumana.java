@@ -9,6 +9,6 @@ public class ArmaduraHumana extends Montura {
 
     @Override
     public String imagen() {
-        return "imagenes/armaduraHumana.jpg";
+        return "imagenes/armaduraHumana.png";
     }
 }

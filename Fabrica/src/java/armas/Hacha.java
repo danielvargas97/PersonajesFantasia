@@ -14,7 +14,7 @@ public class Hacha extends ArmaAbstracta{
 
     @Override
     public String imagen() {
-        return "imagenes/hacha.jpg";
+        return "imagenes/hacha.png";
     }
  
 }

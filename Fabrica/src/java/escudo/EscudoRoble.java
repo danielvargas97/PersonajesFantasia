@@ -9,6 +9,6 @@ public class EscudoRoble extends EscudoAbstracto {
 
     @Override
     public String imagen() {
-        return "imagenes/escudoEnano.jpg";
+        return "imagenes/escudoEnano.png";
     }
 }

@@ -10,6 +10,6 @@ public class Mazo extends ArmaAbstracta {
 
     @Override
     public String imagen() {
-        return "imagenes/mazo.jpg";
+        return "imagenes/mazo.png";
     }
 }
